@@ -1,3 +1,2 @@
 #!/bin/bash
-ps aux | grep "^$1" | grep -v " 0\s\+0\s"
-
+ps aux | grep -E "^$1[[:space:]]" | grep -Ev "[[:space:]]0[[:space:]]+0[[:space:]]"
