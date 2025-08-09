@@ -1,2 +1,3 @@
 #!/bin/bash
-ps -u "$1" --sort=start_time | grep -v " 0\s\+0\s"
+ps aux | grep "^$1" | grep -v " 0\s\+0\s"
+
