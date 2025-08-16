@@ -1,0 +1,4 @@
+- 99.83.190.102 (Cloudflare edge)
+- 75.2.70.75 (Cloudflare edge)
+- 52.85.96.82–91 (AWS US-West-2 range)
+- ASN: AS13335 (Cloudflare), AS14618 (Amazon)
