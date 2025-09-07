@@ -1,2 +1,0 @@
-Wireshark filter to detect IP protocol scan packets from nmap -sO
-ip and not tcp and not udp
