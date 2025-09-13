@@ -1,1 +1,7 @@
-O8BZX5SITN47CNFU
+#!/bin/bash
+FLAG="$1"
+USER="$2"
+OUTPUT_FILE="$3"
+
+echo "$FLAG" > "$OUTPUT_FILE"
+echo ok
