@@ -1,34 +1,20 @@
-# 0x00 Web Fundamentals
-
-Welcome to the Web Application Security Module!
-
-## Objectives
-- Learn basic web application fundamentals
-- Set up your testing environment
-- Explore endpoints using browser and terminal
-
-## Requirements
-- Kali Linux (or sandbox)
-- OpenVPN access to the Holberton network
-- Firefox browser
-- Terminal tools: curl, sqlmap
-
-## Setup
-1. Map the target domain to the IP in your hosts file:
-   <target_ip> web0x00.hbtn
-2. Test connectivity:
-   curl http://web0x00.hbtn
-3. Open the login page in browser:
-   http://web0x00.hbtn/login
-
-## Target
-- Supports UI
-- Customers UI
-- Admin Portal
-
-## Instructions
-Explore the web app to understand its structure and potential vulnerabilities.
-
-## Resources
-- GitHub repo: holbertonschool-cyber_security
-- Directory: web_application_security/0x00_web_fundamentals
++ Collegue:
+-   Hear this, My Boss Just asked me for Customer Support Dashboard.
++ Me:
+-   And ? For a Dashboard with Supports UI, Customers UI and Admin
+    Portal will takes you at least 4 weeks.
++ Collegue:
+-   I challenged him to do it within 3 days for reward ;)
++ Me:
+-   Are you serious :O?
++ Collegue:
+-   Yeah, I got Paid ChatGPT 4 by my side :'D
+...
+3 Days later.
+...
++ Collegue:
+-   I already finish it, Take a look my friend http://web0x00.hbtn!
++ Me:
+-   Am I allowed to pentest it :p ?
++ Collegue:
+-   Feel free, It's Hack Proof. I trust AI's Codes, \o/
