@@ -15,13 +15,9 @@ case "$input" in
   *) b64="$input" ;;
 esac
 
-# base64 decode and XOR with the first byte
+# base64-decode and XOR each byte with 0x5f (95), which matches WebSphere {xor}
 printf '%s' "$b64" | base64 -d 2>/dev/null | python3 - <<'PY'
 import sys
 data = sys.stdin.buffer.read()
-if not data:
-    sys.exit(0)
-key = data[0]
-decoded = ''.join(chr(b ^ key) for b in data)
-sys.stdout.write(decoded)
+sys.stdout.write(''.join(chr(b ^ 0x5f) for b in data))
 PY
