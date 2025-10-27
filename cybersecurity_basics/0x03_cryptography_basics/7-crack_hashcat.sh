@@ -1,0 +1,2 @@
+#!/bin/bash
+WL=/usr/share/wordlists/rockyou.txt; if [[ -f $WL ]]; then hashcat -m 0 -a 0 --quiet --potfile-path=./.hashcat.pot "$1" "$WL"; elif [[ -f ${WL}.gz ]]; then hashcat -m 0 -a 0 --quiet --potfile-path=./.hashcat.pot "$1" <(zcat "${WL}.gz"); else echo "rockyou not found at /usr/share/wordlists" >&2; exit 1; fi; hashcat -m 0 --show --potfile-path=./.hashcat.pot "$1" | cut -d: -f2- | awk 'NF{print; exit}' > 7-password.txt
