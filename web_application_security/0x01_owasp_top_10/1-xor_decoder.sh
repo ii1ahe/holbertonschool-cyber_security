@@ -1,5 +1,4 @@
 #!/bin/bash
-# Decode XOR WebSphere tokens like: {xor}KzosKw==
 # Usage: ./1-xor_decoder.sh '{xor}KzosKw=='
 
 if [ -z "$1" ]; then
@@ -15,7 +14,6 @@ case "$input" in
   *) b64="$input" ;;
 esac
 
-# base64-decode and XOR each byte with 0x5f (95), which matches WebSphere {xor}
 printf '%s' "$b64" | base64 -d 2>/dev/null | python3 - <<'PY'
 import sys
 data = sys.stdin.buffer.read()
